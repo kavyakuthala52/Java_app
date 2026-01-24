@@ -19,16 +19,16 @@ pipeline{
 
     stages{
          
-        stage('Git Checkout'){
-                    when { expression {  params.action == 'create' } }
-            steps{
-            gitCheckout(
-                branch: "main",
-                url: "https://github.com/kavyakuthala52/Java_app.git",
-                credentialsId: "github-creds"
-            )
-            }
-        }
+        // stage('Git Checkout'){
+        //             when { expression {  params.action == 'create' } }
+        //     steps{
+        //     gitCheckout(
+        //         branch: "main",
+        //         url: "https://github.com/kavyakuthala52/Java_app.git",
+        //         credentialsId: "github-creds"
+        //     )
+        //     }
+        // }
          stage('Unit Test maven'){
          
          when { expression {  params.action == 'create' } }
