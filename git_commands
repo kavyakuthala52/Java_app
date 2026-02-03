@@ -1,8 +1,0 @@
-git init
-git status
-git clone
-git add . or git add filename
-git remote -v
-git push 
-git push --set-upstream origin master
-git commit -m "commit message"
